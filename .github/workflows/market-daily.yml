@@ -1,5 +1,8 @@
 name: Fetch market daily
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '30 8 * * *' # 中国1日的16:30，就是UTC时间1日的08:30
 jobs:
