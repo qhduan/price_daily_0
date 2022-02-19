@@ -22,7 +22,7 @@ jobs:
         pip install -r requirements.txt
     - name: download
       run: |
-        python run.py
+        python -u run.py
     - name: Create local changes
       run: |
         git add .
